@@ -21,18 +21,17 @@ Spring Web (for the on-demand text file printer), Spring Data JDBC and H2 Databa
 <br>
 <li>On-demand detailed Report will be exported by calling the controller "/textfileprinter" Trigger the url request with get in any internet browser i.e. localhost:8080/textfileprinter or curl localhost:8080/textfileprinter in command line tool. </li>
 <br>
-
-<li>Pacakge Structure and purposes<br>
- com.candidate.dannychung.progchallenge - boot application (start-up of spring application context)<br>
- com.candidate.dannychung.progchallenge.configuration - (mainly for datasource and bean of JDBC template)<br>
- com.candidate.dannychung.progchallenge.constant - the only constant : riskfree interest rate<br>
- com.candidate.dannychung.progchallenge.controller - for triggering on-demand report output with restcontroller<br>
- com.candidate.dannychung.progchallenge.dao and com.candidate.dannychung.progchallenge.dao.impl - data access interface and implementation<br>
- com.candidate.dannychung.progchallenge.event - the class for the change-in-time event<br>
- com.candidate.dannychung.progchallenge.listener - two subscribers to subscribe the object for updated prices<br>
- com.candidate.dannychung.progchallenge.model - POJOs for the program<br>
- com.candidate.dannychung.progchallenge.publisher - to get the update prices and publish events to the listeners / (subscribers)<br>
- com.candidate.dannychung.progchallenge.service and com.candidate.dannychung.progchallenge.service.impl - arithimetic functions for updated prices for the three types of securities<br>
- com.candidate.dannychung.progchallenge.util - File input and output and the implemenation of updated prices before publisher publising events
- 
-</li>
+<li>Pacakge Structure and purposes</li>
+<ol>
+ <li>com.candidate.dannychung.progchallenge - boot application (start-up of spring application context)</li>
+ <li>com.candidate.dannychung.progchallenge.configuration - (mainly for datasource and bean of JDBC template)</li>
+ <li>com.candidate.dannychung.progchallenge.constant - the only constant : riskfree interest rate</li>
+ <li>com.candidate.dannychung.progchallenge.controller - for triggering on-demand report output with restcontroller</li>
+ <li>com.candidate.dannychung.progchallenge.dao and com.candidate.dannychung.progchallenge.dao.impl - data access interface and implementation</li>
+ <li>com.candidate.dannychung.progchallenge.event - the class for the change-in-time event</li>
+ <li>com.candidate.dannychung.progchallenge.listener - two subscribers to subscribe the object for updated prices</li>
+ <li>com.candidate.dannychung.progchallenge.model - POJOs for the program</li>
+ <li>com.candidate.dannychung.progchallenge.publisher - to get the update prices and publish events to the listeners / (subscribers)</li>
+ <li>com.candidate.dannychung.progchallenge.service and com.candidate.dannychung.progchallenge.service.impl - arithimetic functions for updated prices for the three types of securities</li>
+ <li>com.candidate.dannychung.progchallenge.util - File input and output and the implemenation of updated prices before publisher publising events</li>
+ </ol>
