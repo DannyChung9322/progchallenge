@@ -2,12 +2,14 @@
 MS programming challenge
 <li> Dependencies
 <br>
-Spring Web (for on-demand text file printer), Spring Data JDBC and H2 Database(1.3.148) for data access layer was exported from spring initalzr. Apache common math3 (3:3.2) was also sourced for functions related to normal distribution. The application was built and tested using spring tool suite 4.9.0.
+Spring Web (for the on-demand text file printer), Spring Data JDBC and H2 Database(1.3.148) for data access layer was exported from spring initalzr. Apache common math3 (3:3.2) was also sourced for functions related to normal distribution. The application was built and tested using spring tool suite 4.9.0.
 
 <a>https://start.spring.io/#!type=gradle-project&language=java&platformVersion=2.6.6&packaging=jar&jvmVersion=1.8&groupId=com.candidate.dannychung&artifactId=progchallege&name=progchallege&description=Programming%20challenge%20by%20Danny%20Chung&packageName=com.candidate.dannychung.progchallege&dependencies=web,data-jdbc,h2"</a>
 </li>
 <br>
 <li>Input and ouput file locations can be specified in application.properties the default settings are :<br>csvinput.path=C:/temp/inputfile.csv and csvoutput.path=C:/temp/outfile.csv </li>
+<br>
+<li>The example for inputfile.csv and outfile.csv can be found in the root of this git repository</li>
 <br>
 <li>The inputfile.csv will be the pre-requsite of running the application. It is comma-seperated by Ticker (e.g. 0005.HK) , Type (1=Common Stock,2=Call Option , 3=Put Option), Long Volume and Short Volume (0 must be entered if no long position / short position is held)</li>
  <br>
