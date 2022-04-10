@@ -10,7 +10,7 @@ Spring Web (for the on-demand text file printer), Spring Data JDBC and H2 Databa
 <br>
 <li>Input and ouput file locations can be specified in application.properties (under src\main\resources) the default settings are :<br>csvinput.path=C:/temp/inputfile.csv and csvoutput.path=C:/temp/outfile.csv </li>
 <br>
-<li>The example for inputfile.csv and outfile.csv can be found in the root of this git repositor.y</li>
+<li>The example for inputfile.csv and outfile.csv can be found in the root of this git repository.</li>
 <br>
 <li>The inputfile.csv will be the pre-requsite of running the application. It is comma-seperated by Ticker (e.g. 0005.HK) , Type (1=Common Stock,2=Call Option , 3=Put Option), Long Volume and Short Volume (0 must be entered if no long position / short position is held).</li>
  <br>
