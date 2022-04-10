@@ -2,7 +2,7 @@
 MS programming challenge
 <li> Dependencies
 <br>
-Spring Web (for the on-demand text file printer), Spring Data JDBC and H2 Database(1.3.148) for data access layer was exported from spring initalzr. Apache common math3 (3:3.2) was also sourced for functions related to normal distribution. The application was built and tested using spring tool suite 4.9.0.<br>
+Spring Web (for the on-demand text file printer), Spring Data JDBC and H2 Database(1.3.148) for data access layer was exported from Spring Initialzr. Apache common math3 (3:3.2) was also sourced for functions related to normal distribution. The application was built and tested using spring tool suite 4.9.0.<br>
  
 <a>https://start.spring.io/#!type=gradle-project&language=java&platformVersion=2.6.6&packaging=jar&jvmVersion=1.8&groupId=com.candidate.dannychung&artifactId=progchallege&name=progchallege&description=Programming%20challenge%20by%20Danny%20Chung&packageName=com.candidate.dannychung.progchallege&dependencies=web,data-jdbc,h2"</a>
  <br><br>The build.gradle file was run by gradled tasks - build dependencies , build and boot run before using Boot Dashboard in STS for test and development and can be found in the root of this git repository.
@@ -21,7 +21,7 @@ Spring Web (for the on-demand text file printer), Spring Data JDBC and H2 Databa
 <br>
 <li>On-demand detailed Report will be exported by calling the controller "/textfileprinter" Trigger the url request with get in any internet browser i.e. localhost:8080/textfileprinter or curl localhost:8080/textfileprinter in command line tool. </li>
 <br>
-<li>Packakge Structure and purposes</li>
+<li>Package Structure and purposes</li>
 <ol>
  <li>com.candidate.dannychung.progchallenge - boot application (start-up of spring application context)</li>
  <li>com.candidate.dannychung.progchallenge.configuration - (mainly for datasource and bean of JDBC template)</li>
