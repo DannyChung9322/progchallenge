@@ -14,7 +14,8 @@ Spring Web (for the on-demand text file printer), Spring Data JDBC and H2 Databa
 <br>
 <li>The inputfile.csv will be the pre-requsite of running the application. It is comma-seperated by Ticker (e.g. 0005.HK) , Type (1=Common Stock,2=Call Option , 3=Put Option), Long Volume and Short Volume (0 must be entered if no long position / short position is held).</li>
  <br>
- <li>schema.sql and dml.sql (under src\main\resources) will be triggered during the startup. 1 table - Stock_and_option_details will be created storing prices and related fixed parameter (e.g. expected return,annualized_sd,etc). 9 securities ('0005.HK','50001.HK','50002.HK','3988.HK','60001.HK','60002.HK','0023.HK','70001.HK','70002.HK') and their correesponding details will be added by the dml queries. If the inputfile contains records of which their tickers are other than these nine, these records' NAV calculations will be ignored.</li>
+ <li>schema.sql and dml.sql (under src\main\resources) will be triggered during the startup. 1 table - Stock_and_option_details will be created storing prices and related fixed parameter (e.g. expected return,annualized_sd,etc). 9 securities ('0005.HK','50001.HK','50002.HK','3988.HK','60001.HK','60002.HK','0023.HK','70001.HK','70002.HK') and their correesponding details will be added by the dml queries. If the inputfile contains records of which their tickers are other than these nine, these records' NAV calculations will be ignored.
+ <img src="https://github.com/DannyChung9322/progchallenge/blob/main/h2_db.PNG?raw=true"></img></li>
  <br>
 <li>After ApplicationReadyEvent , a change in time event will be triggered randomly between 0.5 to 2 seconds. Total NAV for the whole portfolio will be outputted to the console.</li>
 <br>
